@@ -28,9 +28,7 @@ function Navbar() {
             <a id="a" onClick={() => navigate("/careers")}>
               CAREERS
             </a>
-            <a id="a" onClick={() => navigate("/partner")}>
-              PARTNER
-            </a>
+           
             <a id="a" onClick={() => navigate("/partner")}>
               PARTNER
             </a>
