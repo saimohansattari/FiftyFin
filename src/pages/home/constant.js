@@ -22,6 +22,23 @@ import {
   Searce,
 } from "../../assets/Our-patners-images";
 
+//import portfolio images
+import { 
+  Fetch_1,
+  lion_2,
+  Getmoney_3,
+} from "../../assets/portfolioimges";
+
+
+
+
+
+
+
+
+
+
+
 export const partners = [
   {
     id: 1,
@@ -149,4 +166,12 @@ export const investors = [
 
 
   
+];
+
+export const portfolio = [
+  {
+    id : 1,
+    image:Fetch_1,
+    
+  },
 ];

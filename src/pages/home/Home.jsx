@@ -1,7 +1,8 @@
 import React from "react";
 import "./style.css";
-import { partners, investors } from "./constant";
+import { partners, investors, portfolio } from "./constant";
 import { googleplay, appstore } from "../../assets/icons";
+import { Fetch_1, lion_2, Getmoney_3 } from "../../assets/portfolioimges";
 
 function Home() {
   return (
@@ -16,19 +17,13 @@ function Home() {
             </div>
             <div className="card-sub">
               <p className="p1">
-                <span>At just 1% per month</span>{" "}
+                <span>at just 1% per month</span>
               </p>
             </div>
             <div className="card-sub">
               <p className="p2">
-                Use Referral code
-                <h3>
-                  &nbsp;<span>LAUNCH</span>&nbsp;
-                </h3>
-                to get
-                <h3>
-                  &nbsp;<span>1%</span> &nbsp;
-                </h3>
+                Use Referral code&nbsp;<span>LAUNCH</span>&nbsp; get &nbsp;<span>1%</span> &nbsp;
+                
                 OFF on your interest
               </p>
             </div>
@@ -109,6 +104,26 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="mobile-container">
+          <div className="portfolios">
+            <div className="card">
+                <p>Get <span>₹</span>  approved in <span>7</span>  Minutes!</p>
+            </div>
+            <div className="card">
+              <div className="img-card">
+                {/* {portfolio.map((Image)=>{
+                  <div key={Image.id}>
+                    <img src={Image.image} alt="" />
+                  </div>
+                })} */}
+                <img src={lion_2} alt="" />
+
+              </div>
+  
+            </div>
+          </div>
       </div>
     </div>
   );
