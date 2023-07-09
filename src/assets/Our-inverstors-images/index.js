@@ -1,0 +1,9 @@
+export { default as Aniket } from "./Aniket.png";
+export { default as Arun } from "./Arun.png";
+export { default as Dinesh } from "./Dinesh.png";
+export { default as Keynote } from "./Keynote.png";
+export { default as Krs } from "./Krs.png";
+export { default as Kxx } from "./Kxx.png";
+export { default as Manish } from "./Manish.png";
+export { default as Rajesh } from "./Rajesh.png";
+export { default as Sumit } from "./Sumit.png";
