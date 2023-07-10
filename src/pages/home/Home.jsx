@@ -3,6 +3,10 @@ import "./style.css";
 import { partners, investors, portfolio } from "./constant";
 import { googleplay, appstore } from "../../assets/icons";
 import { Fetch_1, lion_2, Getmoney_3 } from "../../assets/portfolioimges";
+import FiftyFin_mp  from '../../assets/FiftyFin_mp.mp4'
+
+
+
 
 function Home() {
   return (
@@ -12,7 +16,7 @@ function Home() {
           <div className="main-cards">
             <div className="card-sub">
               <h2>
-                Loans Against <span>Mutual Funds</span>
+                Loans Against &nbsp; <span>Mutual Funds</span>
               </h2>
             </div>
             <div className="card-sub">
@@ -28,6 +32,11 @@ function Home() {
               </p>
             </div>
             <br />
+            <div className="card">
+              <div className="scroll-text">
+                <p><span>NO Documentation</span></p>
+              </div>             
+            </div>
             <br />
             <div className="card">
               <div className="card-btn">
@@ -47,7 +56,10 @@ function Home() {
 
           <div className="card ">
             <div className="card-vedio">
-              <video src="https://youtu.be/wUXez-IsZoQ" controls></video>
+              <video  controls>
+                <source src={FiftyFin_mp} type="video/mp4" />
+              </video>
+
             </div>
           </div>
         </div>

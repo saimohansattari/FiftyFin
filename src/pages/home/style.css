@@ -14,7 +14,7 @@
     justify-content: center;
     justify-content: space-between;
     padding: 0px 60px 0px 60px;
-    width: auto;
+    /* width: auto; */
   }
   .container-1 .main-cards {
     display: flex;
@@ -44,6 +44,10 @@
   }
   
   .card-sub h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-size: 44px;
   }
@@ -84,6 +88,22 @@
   .card-sub .p2 span{
     font-size: 31px;
   }
+
+  .container-1 .framer .card .scroll-text{
+    height: 180px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-1 .framer .card .scroll-text p{
+    margin: 0px;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+    align-items: center;
+  }
  
   
   .card .card-vedio {
@@ -93,13 +113,15 @@
     margin-top: 70px;
     width: auto;
   }
-  
+
+
   .card .card-vedio video {
     border-radius: 35px;
     padding: 25px;
-    height: 350px;
+    height: 380px;
     width: 100%;
   }
+ 
   .card .card-btn {
     gap: 18px;
     margin-top: 30px;

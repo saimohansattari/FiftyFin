@@ -49,10 +49,13 @@ span {
 }
 
 .navbar .nav-buttons #a {
+  /* display: flex;
+  flex-direction: row; */
   font-weight: 550;
   font: 16px;
   font-family: sans-serif;
-  margin-left: 25px;
+  margin-left: 35px;
+  margin-right: 10px;
   cursor: pointer;
   color: white;
 }
