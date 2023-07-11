@@ -1,11 +1,12 @@
 import React from "react";
 import "./style.css";
-import { partners, investors, portfolio } from "./constant";
+import FiftyFin_mp  from '../../assets/FiftyFin_mp.mp4'
+import { partners, investors, portfolio , process} from "./constant";
 import { googleplay, appstore } from "../../assets/icons";
 import { Fetch_1, lion_2, Getmoney_3 } from "../../assets/portfolioimges";
-import FiftyFin_mp  from '../../assets/FiftyFin_mp.mp4'
-
-
+import { instant_1, cibil_2, flexible_3, getall_4 } from "../../assets/process-flow-imgaes";
+import { LAMF, LAS, EMBEDED } from "../../assets/Our-Products";
+import { blog_1, blog_2, blog_3 } from "../../assets/Our-blog";
 
 
 function Home() {
@@ -136,6 +137,142 @@ function Home() {
   
             </div>
           </div>
+      </div>
+
+      <div className="process-container">
+         <div className="process-flow">
+          {/* {process.map((Image) => {
+            <div key={image.id}>
+              <img src={Image.image} alt="" />
+            </div>
+          })} */}
+            <img src={getall_4} alt="" />
+         </div>
+      </div>
+
+
+
+      <div className="our-products-container">
+
+        <div className="main-box">
+
+          <div className="text-box">
+            <div className="card"><h2>Our <span>Products</span></h2></div>
+            <div className="card"><p>Get quick cash without liquidating your <br /> investments!</p></div>
+          </div>
+
+          <div className="card-box">
+            <div className="sub-card">
+              <div className="card">
+                <div className="card-img">
+                  <img src={LAMF} alt="LAMF" />
+                </div>
+                <div className="card-text">
+                  <h3>LAMF</h3>
+                  <p>Loan Against Mutual Funds</p>
+                </div>
+                <div className="card-btn">
+                  <a href=""><button>Get Loan</button></a>
+                </div>
+              </div>
+
+              <div className="card">
+                <div className="card-img">
+                  <img src={LAS} alt="LAS" />
+                </div>
+                <div className="card-text">
+                  <h3>LAS</h3>
+                  <p>Loan Against Securities</p>
+                </div>
+                <div className="card-btn">
+                  <a href=""><button>Get Loan</button></a>
+                </div>
+              </div>
+
+              <div className="card">
+                <div className="card-img">
+                  <img src={EMBEDED} alt="LAS" />
+                </div>
+                <div className="card-text">
+                  <h3>Embedded LAS/LAMF</h3>
+                  <p>Partner with us</p>
+                </div>
+                <div className="card-btn">
+                  <a href=""><button>Get Loan</button></a>
+                </div>
+              </div>
+
+            </div>           
+          </div>
+        </div>
+        
+      </div>
+
+      {/* interest calculator section */}
+
+
+      <div className="blog-container">
+        <div className="blog-text">
+          <h2>Our <span>Blog</span></h2>
+        </div>
+
+        <div className="blog-cards">
+          <div className="sub-card">
+            <a href="https://blog.50fin.in/50fin-launch/">
+              <div className="card">               
+                <div className="blog-img">
+                  <img src={blog_1} alt="Lunch" />
+                </div>
+
+                <div className="blog-disc">
+                  <div className="blog-text"><span>50Fin – Loan Against Mutual  Funds: Launch</span></div>
+                  <div className="blog-para">
+                    Get Loan against your mutual funds Now! Use Code: LAUNCH to avail the offer on interest rate...
+                  </div>
+                  <div className="blog-link"><span>Read More »</span></div>
+                </div>                
+              </div>
+            </a>
+          </div>
+
+          <div className="sub-card">
+            <a href="https://blog.50fin.in/easy-way-to-meet-your-financial-leads/">
+              <div className="card">               
+                <div className="blog-img">
+                  <img src={blog_2} alt="Lunch" />
+                </div>
+
+                <div className="blog-disc">
+                  <div className="blog-text"><span>An Easy Way to Meet Your Financial Needs</span></div>
+                  <div className="blog-para">
+                   Loans against mutual funds have become a popular option for people who need ...                  </div>
+                  <div className="blog-link"><span>Read More »</span></div>
+                </div>                
+              </div>
+            </a>
+          </div>
+
+          <div className="sub-card">
+            <a href="https://blog.50fin.in/eligibility-criteria-for-loan-against-mutual-funds/">
+              <div className="card">               
+                <div className="blog-img">
+                  <img src={blog_3} alt="Lunch" />
+                </div>
+
+                <div className="blog-disc">
+                  <div className="blog-text"><span>Eligibility Criteria for Loan Against Mutual Funds</span></div>
+                  <div className="blog-para">
+                   When financial needs arise, and you have invested in mutual funds, one option to consider is ...                  </div>
+                  <div className="blog-link"><span>Read More »</span></div>
+                </div>                
+              </div>
+            </a>
+          </div>
+          
+        </div>
+        <div className="blog-btn">
+          <button>View more</button>
+        </div>
       </div>
 
       

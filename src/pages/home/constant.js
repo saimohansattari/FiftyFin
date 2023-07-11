@@ -29,6 +29,14 @@ import {
   Getmoney_3,
 } from "../../assets/portfolioimges";
 
+//import process-flow images
+import {
+  instant_1,
+  cibil_2,
+  flexible_3,
+  getall_4,
+} from '../../assets/process-flow-imgaes'
+
 
 
 
@@ -175,3 +183,10 @@ export const portfolio = [
     
   },
 ];
+
+export const process = [
+  {
+    id : 1,
+    image:instant_1,
+  }
+]
