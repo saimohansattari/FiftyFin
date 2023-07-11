@@ -24,7 +24,10 @@ span {
   color: rgb(38, 254, 238);
 }
 
-/* Navbar page Css */
+
+
+
+      /* Navbar page Css */
 .navbar {
   padding: 25px 105px 25px 105px;
   /* position: fixed; */
@@ -52,7 +55,8 @@ span {
   font-weight: 550;
   font: 16px;
   font-family: sans-serif;
-  margin-left: 25px;
+  margin-left: 35px;
+  margin-right: 10px;
   cursor: pointer;
   color: white;
 }
@@ -86,7 +90,107 @@ span {
 #icon {
   color: rgb(38, 254, 238);
   font-size: 30px;
-  /* float: right; */
   cursor: pointer;
   display: none;
 }
+
+
+
+
+
+          /* Footer css */
+
+ .footer{
+  background-color:  rgb(11, 13, 34) ;
+  padding: 50px 105px;
+ 
+  
+ }
+
+ .footer .footer-sub{
+  gap: 25px;
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+  
+ }
+
+ .footer .footer-sub .footer-cards{
+  
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .footer .footer-sub .footer-cards  span{
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 21px;
+    font-weight: 600; 
+    letter-spacing: -0.28px;
+    line-height: 23px;
+ }
+ .footer .footer-sub p{
+    color: white;
+ }
+ .footer .footer-sub .footer-cards p{
+  line-height: 30px;
+  margin: 0px;
+    color: white;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 600; 
+ }
+
+ .footer .footer-sub .footer-cards .card .social-accounts {
+  gap: 30px;
+  display: flex;
+  justify-content: space-around;
+ }
+
+ .footer .footer-sub .footer-cards .card .social-accounts a img{
+    width: 40px;
+    border-radius: 9px;
+    height: 40px;
+    background-color: transparent;
+    color: transparent;
+ }
+
+
+
+
+
+ .footer .footer-sub .footer-cards .card .logo-img img {
+  margin-left: 10px;
+  width: 50px;
+  height: 45px;
+ 
+}
+
+ .footer .footer-sub .footer-cards .card button {
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+}
+.footer .footer-sub .footer-cards .card button img {
+  width: 260px;
+  height: 73px;
+}
+
+.footer hr{
+  height:1px;
+  border-width:0;
+  color:rgb(128, 128, 128);
+  background-color:rgba(128, 128, 128, 0.471)
+}
+
+.footer .footer-copy{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+
