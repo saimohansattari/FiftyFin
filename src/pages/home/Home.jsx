@@ -7,9 +7,15 @@ import { Fetch_1, lion_2, Getmoney_3 } from "../../assets/portfolioimges";
 import { instant_1, cibil_2, flexible_3, getall_4 } from "../../assets/process-flow-imgaes";
 import { LAMF, LAS, EMBEDED } from "../../assets/Our-Products";
 import { blog_1, blog_2, blog_3 } from "../../assets/Our-blog";
+import Loan_amount_image from '../../assets/Loan_amount_image.png'
 
 
-function Home() {
+
+function Home({speed = 8000}) {
+
+   
+
+
   return (
     <div>
       <div className="container-1">
@@ -57,8 +63,8 @@ function Home() {
 
           <div className="card ">
             <div className="card-vedio">
-              <video  controls>
-                <source src={FiftyFin_mp} type="video/mp4" />
+              <video  controls muted>
+                <source src={FiftyFin_mp} type="video/mp4"  />
               </video>
 
             </div>
@@ -74,7 +80,7 @@ function Home() {
             </h2>
           </div>
           <div className="scroll-items">
-            <div className="images">
+            <div className="images" style={{ "--speed": `${speed}ms`}}>
               {partners.map((partner) => (
                 <div key={partner.id} className="image">
                   <a href={partner.url} target="_blank">
@@ -83,6 +89,7 @@ function Home() {
                 </div>
               ))}
             </div>
+           
           </div>
         </div>
       </div>
@@ -95,7 +102,7 @@ function Home() {
             </h2>
           </div>
           <div className="scroll-items">
-            <div className="persons">
+            <div className="persons" style={{"--speed": `${speed}ms`}}>
               {investors.map((investor) => (
                 <a key={investor.id} href={investor.url} target="_blank">
                   <div className="card">
@@ -209,6 +216,52 @@ function Home() {
       </div>
 
       {/* interest calculator section */}
+      <div className="interest-container">
+        <div className="interest-text"><span>Interest Calculator</span></div>
+        <div className="interest-sub-cards">
+          <div className="interest-cards">
+            <div className="loan-amount">
+              <label>Loan Amount</label>
+              <input type="number" value='2500'/>
+            </div>
+            
+            <input type="range" min='2500' max="500000" />
+            <div className="interest-rate">
+              <p>Interest Rate</p>
+              <p>1% p.m (12% p.a)</p>
+            </div>
+            <div className="tenure">
+              <p>Tenure</p>
+              <p>12 Months</p>
+            </div>
+            <div className="monthly-payment">
+              <div className="card">
+                <div className="text">Monthly Payment Due</div>
+                <div className="amount"> ₹ 1000</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="interest-cards">
+            <div className="Loan-image">
+              <img src={Loan_amount_image} alt="interest" />
+            </div>
+            <div className="img-text-cards">
+              <div className="img-text">
+                <p>Loan Amount</p>
+                <p> ₹ 25000</p>
+              </div>
+              <div className="img-text">
+                <p>Yearly Interest</p>
+                <p> ₹ 3000</p>
+              </div>
+            </div>
+            
+              
+          </div>
+        </div>
+       
+      </div>
 
 
       <div className="blog-container">
