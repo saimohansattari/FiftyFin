@@ -179,14 +179,46 @@ export const investors = [
 export const portfolio = [
   {
     id : 1,
+    title: "image 1",
     image:Fetch_1,
     
   },
+
+  {
+    id : 2,
+    title : "image 2",
+    image : lion_2,
+  },
+  {
+    id : 3,
+    title : "image 3",
+    image : Getmoney_3,
+  }
 ];
+
+
 
 export const process = [
   {
     id : 1,
-    image:instant_1,
-  }
+    title : "image 1",
+    image :instant_1,
+  },
+
+  {
+    id:2,
+    title : "image 2",
+    image : cibil_2, 
+  },
+  {
+    id:3, 
+    title : "image 3",
+    image : flexible_3,
+  },
+  {
+    id:4,
+    title : "image 4",
+    image : getall_4,
+  },
+ 
 ]
