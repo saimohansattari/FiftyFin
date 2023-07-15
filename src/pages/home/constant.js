@@ -127,14 +127,14 @@ export const investors = [
     url: "https://www.keynotecapitals.com/",
   },
 
-  {
-    id: 5,
-    image: Kxx,
-    name: "100X.VC",
-    designation: "",
-    company: "",
-    url: "https://www.100x.vc/",
-  },
+  // {
+  //   id: 5,
+  //   image: Kxx,
+  //   name: "100X.VC",
+  //   designation: "",
+  //   company: "",
+  //   url: "https://www.100x.vc/",
+  // },
 
   {
     id: 6,
