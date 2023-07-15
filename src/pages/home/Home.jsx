@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { useState, useEffect } from "react";
 import FiftyFin_mp  from '../../assets/FiftyFin_mp.mp4'
 import { partners, investors, portfolio , process} from "./constant";
 import { googleplay, appstore } from "../../assets/icons";
@@ -11,13 +12,37 @@ import Loan_amount_image from '../../assets/Loan_amount_image.png'
 
 
 
-function Home({speed = 8000}) {
+function Home({speed = 12000,}) {
 
-   
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentimageIndex, setCurrentimageIndex] = useState(0);
 
+  useEffect (() => {
+    const Interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex +1) % portfolio.length)
+    },1000);
+
+    return ()=> clearInterval(Interval);
+  },[])
+
+
+  useEffect (() => {
+    const interval = setInterval(() => {
+      setCurrentimageIndex((prevIndex) => (prevIndex +1) % process.length)
+    },1200);
+
+    return ()=> clearInterval(interval);
+  },[])
+
+  const currentImage = portfolio[currentImageIndex];
+  const currentimage = process[currentimageIndex];
+
+  
+  
 
   return (
     <div>
+      
       <div className="container-1">
         <div className="framer">
           <div className="main-cards">
@@ -132,13 +157,9 @@ function Home({speed = 8000}) {
                 <p>Get <span>₹</span>  approved in <span>7</span>  Minutes!</p>
             </div>
             <div className="card">
-              <div className="img-card">
-                {/* {portfolio.map((Image)=>{
-                  <div key={Image.id}>
-                    <img src={Image.image} alt="" />
-                  </div>
-                })} */}
-                <img src={lion_2} alt="" />
+              <div className="img-card" id="images-Port">
+            
+                <img src={currentImage.image} alt={currentImage.title} />
 
               </div>
   
@@ -153,7 +174,7 @@ function Home({speed = 8000}) {
               <img src={Image.image} alt="" />
             </div>
           })} */}
-            <img src={getall_4} alt="" />
+            <img src={currentimage.image} alt={currentimage.title} />
          </div>
       </div>
 
