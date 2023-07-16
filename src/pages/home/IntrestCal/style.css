@@ -1,0 +1,126 @@
+
+
+
+/* interest calculator container */
+
+.interest-container {
+    display: flex;
+    flex-direction: column;
+    margin: 75px;
+    background-color: #111535;
+  }
+  
+  .interest-sub-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    flex-wrap: wrap;
+  }
+  
+  .interest-container .interest-text{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 39px;
+    font-weight: 600;
+    padding: 24px 0px 64px;
+  }
+  .interest-container .interest-cards {
+    color: white;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 35px;
+  }
+  
+  .interest-container .interest-cards .tenure{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .interest-container .interest-cards .loan-amount {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  
+  
+  .interest-container .interest-cards .loan-amount span{
+    padding: 15px;
+    width: 250px;
+    border-bottom-width: 2px;
+    border-color: white;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-style: solid;
+    border-top-width: 2px;
+    border-radius: 10px;
+    color: rgb(38, 254, 238) ;
+    font-size: 24px;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-weight: 800px;
+    background-color: transparent;
+  
+  }
+  
+  .interest-container .interest-cards input[type="range"]{
+    height: 4px;
+    width: 100%;
+  }
+  
+  .interest-container .interest-cards .interest-rate {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .interest-container .interest-cards .monthly-payment .card {
+    padding: 15px;
+    border-bottom-width: 2px;
+    border-color: #828dff;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-style: solid;
+    border-top-width: 2px;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .interest-container .interest-cards .monthly-payment {
+    margin-top: 50px;
+  }
+  
+  .interest-container .interest-cards .monthly-payment .card {
+    font-weight: 700;
+    font-size: 22px;
+  }
+  
+  .interest-container .interest-cards .monthly-payment .card .amount {
+    color: #828dff;
+  }
+  
+  .interest-container .interest-cards .Loan-image img{
+    width: 300px;
+    height: 280px;
+  }
+  
+  .interest-container .interest-cards .img-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  
+  

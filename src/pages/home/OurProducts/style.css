@@ -1,0 +1,117 @@
+
+/* our products container css */
+
+
+.our-products-container .main-box .text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  
+  
+  }
+  .our-products-container .main-box .text-box .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .our-products-container .main-box .text-box h2{
+    margin: 10px;
+    color: white;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 47px;
+    align-items: center;
+  }
+  
+  .our-products-container .main-box .text-box p{
+    margin: 0;
+    color: white;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 47px;
+    align-items: center;
+    
+  }
+  
+  .our-products-container .main-box .card-box{
+    padding: 30px;
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .our-products-container .main-box .card-box .sub-card{
+    gap: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .our-products-container .main-box .card-box .sub-card .card{
+    border-bottom-width: 2px;
+    border-color: #6271ff;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-style: solid;
+    border-top-width: 2px;
+    border-radius: 18px;
+    gap: 15px;
+    background-color: #111535;
+    width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 25px 30px ;
+  }
+  
+  .our-products-container .main-box .card-box .sub-card .card h3{
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 33px;
+    font-weight: 600;
+    margin: 0px;
+  }
+  .our-products-container .main-box .card-box .sub-card .card p{
+    font-family: "Inter-Bold", "Inter", "Inter Placeholder", sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 0px;
+  }
+  .our-products-container .main-box .card-box .sub-card .card .card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .our-products-container .main-box .card-box .sub-card .card .card-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .our-products-container .main-box .card-box .sub-card .card .card-img img{
+    width: 150px;
+    height: 100px;
+  }
+  
+  .our-products-container .main-box .card-box .sub-card .card .card-btn a button{
+    border-radius: 25px;
+    width: 158px;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 580;
+    background-color:  rgb(38, 254, 238);
+    height: 45px;
+  }
+  

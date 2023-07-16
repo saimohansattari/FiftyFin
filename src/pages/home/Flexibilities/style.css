@@ -1,0 +1,66 @@
+
+
+/* process flow container */
+.process-container {
+    /* width: 100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+  }
+  
+  .process-container .process-flow {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+   gap: 50px;
+    padding: 30px;
+    color: white;
+  }
+  
+  /* .process-container .process-flow img {
+    width: 1000px;
+    height: auto;
+  } */
+
+  .process-container .process-flow .text-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .process-container .process-flow .text-cards .card{
+    background-color: #171c48;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    width: 520px;
+    height: 124px;
+    gap: 18px;
+    border-radius: 8px;
+    padding: 30px;
+   
+  }
+
+  .process-container .process-flow .text-cards .card h1 {
+    margin: 0px;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+  }
+  
+  .process-container .process-flow .text-cards .card p {
+    margin: 0px;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+  }
+
+
+  .process-container .process-flow .images .image-card img {
+    width: 390px;
+    height: 340px;
+  }

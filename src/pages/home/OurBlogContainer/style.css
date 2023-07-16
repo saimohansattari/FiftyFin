@@ -1,0 +1,96 @@
+
+/* Blog container css */
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 100px;
+  }
+  
+  .blog-container .blog-text h2{
+    margin: 10px;
+    color: white;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 47px;
+    align-items: center;
+  }
+  
+  .blog-container .blog-btn button{
+    border-radius: 25px;
+    width: 158px;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 580;
+    background-color:  rgb(38, 254, 238);
+    height: 45px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .blog-container .blog-cards{
+    gap: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .blog-container .blog-cards .sub-card a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .blog-container .blog-cards .sub-card .card{
+    border-bottom-width: 2px;
+    border-color: #6271ff;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-style: solid;
+    border-top-width: 2px;
+    border-radius: 18px;
+    width: 362px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .blog-container .blog-cards .sub-card .card .blog-img{
+    width: 360px;
+    
+  }
+  
+  .blog-container .blog-cards .sub-card .card img{
+    height: fit-content;
+    width: 360px;
+    border-radius: 18px 18px 0px 0px
+  
+  }
+  
+  .blog-container .blog-cards .sub-card .card .blog-disc{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .blog-container .blog-cards .sub-card .card .blog-disc .blog-text{
+      font-family: "Inter-SemiBold", "Inter", sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 40px;
+  }
+  .blog-container .blog-cards .sub-card .card .blog-disc .blog-para{
+    font-family:sans-serif;
+    font-size: 14px;
+  }
+  .blog-container .blog-cards .sub-card .card .blog-disc .blog-link{
+    font-size: 13px;
+  }
+  
+  
+  
+  

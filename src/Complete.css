@@ -196,6 +196,84 @@ span {
 }
 
 
+@media only screen and (max-width: 1285px) {
+
+  .container-1 .framer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* padding: 0px 60px 0px 60px; */
+    padding: 10px;
+}
+ 
+    .container-1 .card h2 {
+      display: flex;
+      flex-wrap: wrap;
+      color: white;
+      font-size: 39px;
+    }
+    
+    .card-sub h2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 39px;
+    }
+    .card-sub h2 span {
+      font-size: 39px;
+    }
+
+    .card-sub .p1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      width: auto;
+      margin-top: 50px;
+    }
+    
+    .card-sub .p2 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      width: auto;
+      font-size: 21px;
+      color: white;
+      display: flex;
+      line-height: 30px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .card-sub .p2 span{
+      font-size: 27px;
+    }
+
+    .card .card-vedio {
+      cursor: pointer;
+      padding: 0px 0px;
+      height: 300px;
+      /* margin-top: 70px; */
+      width: auto;
+    }
+  
+  
+    .card .card-vedio video {
+      border-radius: 35px;
+      padding: 25px;
+      height: 300px;
+      width: 90%;
+      margin-left: 50px;
+    }
+}
+
+
 @media only screen and (max-width: 700px) {
   body {
    align-items: center;
