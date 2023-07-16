@@ -6,7 +6,6 @@ import { About, Home, Blog, Careers, Patner, Contact } from "./pages";
 import "./Complete.css";
 
 function App() {
-
   return (
     <>
       <Router>
