@@ -1,0 +1,161 @@
+:root {
+  --speed: 12000 ;
+ 
+}
+
+
+
+  /* contianer-2 css */
+  
+  .container-2 {
+    padding: 30px 1px;
+    width: 100vw;
+    overflow: hidden;
+
+}
+  
+  .container-2 .scrol-card {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container-2 .scrol-card h2 {
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 39px;
+    color: white;
+    font-weight: 600px;
+  }
+  
+  .container-2 .scroll-items {
+    /* height: 400px; */
+    width: 100vw;
+  }
+  
+  .container-2 .scroll-items .images {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 16px;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: 22px;
+    position: relative;
+    width: min-content;
+    background-color: rgb(11, 13, 34);
+    animation: swip var(--speed) linear infinite backwards ;
+    /* overflow-x: hidden; */
+  }
+
+  @keyframes swip {
+    0% {
+      transform: translate(0);
+    }
+
+    100% {
+      transform: translate(-100%);
+    }
+  }
+  
+  .container-2 .scroll-items .images .image {
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-2 .scroll-items .images .image a {
+    cursor: pointer;
+    text-decoration: none;
+    color: transparent;
+  }
+  
+  .container-2 .scroll-items .images .image a img {
+    border-radius: 20px;
+    background-color: white;
+    height: 109px;
+    width: fit-content;
+  }
+  
+  .container-2 .scroll-items .persons {
+    /* overflow-x: hidden; */
+    height: auto;
+    width: auto;
+    background-color: rgb(11, 13, 34);
+    padding: 10px;
+    gap: 40px;
+    display: flex;
+    animation: swips var(--speed) linear infinite backwards ;
+  }
+  @keyframes swips {
+    0% {
+      transform: translate(0);
+    }
+
+    100% {
+      transform: translate(100%);
+    }
+  }
+  
+  .container-2 .scroll-items .persons a {
+    color: white;
+    text-decoration: none;
+    width: auto;
+  }
+  
+  .container-2 .scroll-items .persons a .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+  }
+  
+  .container-2 .scroll-items .persons .card-img {
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  .container-2 .scroll-items .persons .card-img img{
+    height: 104px;
+    width: 109px;
+  }
+  
+  .container-2 .scroll-items .persons .card-name p {
+    font-family: "Inter-Bold", "Inter", "Inter Placeholder", sans-serif;
+    font-size: 18px;
+    padding: 0px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-2 .scroll-items .persons .card-desig p {
+    margin: 0px;
+    font-family: "Inter-Bold", "Inter", "Inter Placeholder", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-2 .scroll-items .persons .card-descrp p {
+    margin: 0px;
+    font-family: "Inter", "Inter Placeholder", sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
