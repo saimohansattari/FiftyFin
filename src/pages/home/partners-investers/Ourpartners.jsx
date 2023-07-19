@@ -13,7 +13,7 @@ function Ourpartners({speed = 12000,}) {
                 </h2>
             </div>
             <div className="scroll-items">
-                <div className="images" style={{ "--speed": `${speed}ms`}}>
+                <div className="images " style={{ "--speed": `${speed}ms`}}>
                 {partners.map((partner) => (
                     <div key={partner.id} className="image">
                     <a href={partner.url} target="_blank">
@@ -22,6 +22,8 @@ function Ourpartners({speed = 12000,}) {
                     </div>
                 ))}
                 </div>
+
+              
             
             </div>
             </div>

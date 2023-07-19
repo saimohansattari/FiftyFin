@@ -10,11 +10,20 @@ import {
 
 function Navbar() {
   const navigate = useNavigate();
-  const location = useLocation();
+  // const location = useLocation();
+
+  const menu = () => {
+    var x = document.getElementById("Menunavbar");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+  }
 
   return (
     <div>
-      <div className="navbar">
+      <div className="navbar" id="Menunavbar">
         <div className="nav-icon">
           <a href={"/"}>
             <img src={logo} alt="" />
@@ -51,10 +60,10 @@ function Navbar() {
           </div>
         </div>
 
-        {/* <div>
-            <label id='icon'> <FontAwesomeIcon icon={faBars} /> </label>
+          <div>
+            <label id='icon' onClick={menu}> <FontAwesomeIcon icon={faBars} /> </label>
 
-          </div> */}
+          </div>
       </div>
     </div>
   );

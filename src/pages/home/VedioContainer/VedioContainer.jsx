@@ -1,9 +1,27 @@
 import React from 'react'
 import './style.css'
+import { useState,useEffect } from 'react'
 import FiftyFin_mp from '../../../assets/FiftyFin_mp.mp4'
 import { googleplay, appstore } from '../../../assets/icons'
 
 function VedioContainer() {
+    const Text = ["No Documentation", "No CIBIL Check", "2 hour Disbursal"];
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentText, setCurrentText] = useState(Text[currentIndex]);
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCurrentIndex(prevIndex => (prevIndex + 1) % Text.length);
+      }, 1100);
+  
+      return () => clearInterval(interval);
+    }, []);
+  
+    useEffect(() => {
+      setCurrentText(Text[currentIndex]);
+    }, [currentIndex, Text]);
+  
+  
   return (
     <div>
         <div className="container-1">
@@ -29,7 +47,7 @@ function VedioContainer() {
                     <br />
                     <div className="card">
                     <div className="scroll-text">
-                        <p><span>NO Documentation</span></p>
+                        <p><span>{currentText}</span></p>
                     </div>             
                     </div>
                     <br />
@@ -65,3 +83,4 @@ function VedioContainer() {
 }
 
 export default VedioContainer
+

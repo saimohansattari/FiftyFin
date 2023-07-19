@@ -2,6 +2,9 @@ import React from 'react'
 import { investors } from '../constant'
 
 function Ourinvestors({speed = 12000,}) {
+
+  
+
   return (
     <div>
         <div className="container-2">
@@ -12,12 +15,12 @@ function Ourinvestors({speed = 12000,}) {
                 </h2>
             </div>
             <div className="scroll-items">
-                <div className="persons" style={{"--speed": `${speed}ms`}}>
+                <div className="persons " style={{"--speed": `${speed}ms`}} >
                     {investors.map((investor) => (
                         <a key={investor.id} href={investor.url} target="_blank">
                         <div className="card">
                             <div className="card-img">
-                            <img src={investor.image} alt="Aniket" />
+                            <img src={investor.image} alt={investor.name} />
                             </div>
                             <div className="card-name">
                             <p>{investor.name}</p>
@@ -32,6 +35,8 @@ function Ourinvestors({speed = 12000,}) {
                         </a>
                     ))}
                 </div>
+
+                
             </div>
             </div>
         </div>

@@ -1,12 +1,12 @@
 import React from "react";
-import VedioContainer from "./VedioContainer/VedioContainer";
-import Ourpartners from "./Partners & Investers/Ourpartners";
-import Ourinvestors from "./Partners & Investers/Ourinvestors";
-import MobileBox from "./MobileContainer/MobileBox";
-import Flexibilities from "./Flexibilities/Flexibilities";
-import OurProducts from "./OurProducts/OurProducts";
-import Interest from "./IntrestCal/Interest";
-import OurBlog from "./OurBlogContainer/OurBlog";
+import VedioContainer from "./vediocontainer/VedioContainer";
+import Ourpartners from "./partners-investers/Ourpartners";
+import Ourinvestors from "./partners-investers/Ourinvestors";
+import MobileBox from "./mobile_container/MobileBox";
+import Flexibilities from "./flexibilities/Flexibilities";
+import OurProducts from "./ourproducts/OurProducts";
+import Interest from "./intrestcal/Interest";
+import OurBlog from "./ourblog_container/OurBlog";
 
 function Home() {
 

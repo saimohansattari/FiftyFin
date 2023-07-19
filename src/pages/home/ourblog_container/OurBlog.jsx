@@ -6,7 +6,7 @@ function OurBlog() {
   return (
     <div>
         
-        <div className="blog-container">
+        <div className="blog-container" id='blog-container'>
             <div className="blog-text">
                 <h2>Our <span>Blog</span></h2>
             </div>

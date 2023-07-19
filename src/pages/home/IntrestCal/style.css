@@ -10,25 +10,28 @@
     background-color: #111535;
   }
   
-  .interest-sub-cards {
+ .interest-container .interest-sub-cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 150px;
     flex-wrap: wrap;
+    margin-bottom: 50px;
   }
   
   .interest-container .interest-text{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     font-family: "Inter-SemiBold", "Inter", sans-serif;
     font-size: 39px;
     font-weight: 600;
-    padding: 24px 0px 64px;
+    padding: 54px 0px 44px;
   }
+ 
   .interest-container .interest-cards {
+    width: 470px;
     color: white;
     font-size: 20px;
     font-family: "Inter", sans-serif;
@@ -36,7 +39,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 35px;
+    justify-content: center;
+    gap: 20px;
   }
   
   .interest-container .interest-cards .tenure{
@@ -47,7 +51,7 @@
   
   .interest-container .interest-cards .loan-amount {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
     gap: 30px;
@@ -94,8 +98,9 @@
     border-top-width: 2px;
     border-radius: 10px;
     background-color: transparent;
-    padding: 25px;
+    padding: 20px;
     display: flex;
+    gap: 10px;
     justify-content: space-between;
   }
   .interest-container .interest-cards .monthly-payment {
@@ -104,14 +109,20 @@
   
   .interest-container .interest-cards .monthly-payment .card {
     font-weight: 700;
-    font-size: 22px;
+    font-size: 21px;
   }
   
   .interest-container .interest-cards .monthly-payment .card .amount {
     color: #828dff;
   }
+
+  .interest-container .interest-cards .Loan-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
-  .interest-container .interest-cards .Loan-image img{
+  .interest-container .interest-cards .Loan-image .pie-chart{
     width: 300px;
     height: 280px;
   }

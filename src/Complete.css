@@ -17,9 +17,9 @@ html::-webkit-scrollbar {
 
 body {
   font-family: "Montserrat", sans-serif;
-
   background-color: rgb(11, 13, 34);
   align-items: center;
+  margin: 0;
 }
 
 span {
@@ -31,18 +31,21 @@ span {
 
       /* Navbar page Css */
 .navbar {
-  padding: 25px 105px 25px 105px;
-  /* position: fixed; */
+  position: fixed;
+  padding: 25px 0px 25px 105px;
   background-color: rgb(11, 13, 34);
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
   width: 100vw;
-  opacity: 1;
+  overflow: hidden;
+  height: 100px;
+ 
 }
 
 .navbar .nav-icon img {
+
   width: 85px;
   height: 45px;
 }
@@ -51,11 +54,12 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 130px;
 }
 
 .navbar .nav-buttons #a {
-  font-weight: 550;
-  font: 16px;
+  font-weight: 500;
+  font: 14px;
   font-family: sans-serif;
   margin-left: 35px;
   margin-right: 10px;
@@ -96,6 +100,44 @@ span {
   display: none;
 }
 
+@media screen and (max-width: 1225px) {
+  .navbar {
+    padding: 25px 105px 25px 105px;
+    position: fixed;
+  }
+  .navbar .list .nav-buttons  {display: none;}
+  .navbar #icon {
+    float: right;
+    display: block;
+    
+  }
+  .navbar.responsive {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+ 
+  .mobile-container .portfolios .card .img-card img{
+    width: 600px;
+    height: auto;
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+
+
+ 
+
+}
 
 
 
@@ -135,12 +177,21 @@ span {
  .footer .footer-sub p{
     color: white;
  }
+ .footer .footer-sub .footer-cards a{
+  cursor: pointer;
+  line-height: 30px;
+  margin: 0px;
+    color: white;
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600; 
+ }
  .footer .footer-sub .footer-cards p{
   line-height: 30px;
   margin: 0px;
     color: white;
     font-family: "Inter-SemiBold", "Inter", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600; 
  }
 
@@ -196,7 +247,13 @@ span {
 }
 
 
-@media only screen and (max-width: 1285px) {
+    /* Mobile Responsive */
+
+
+@media only screen and (max-width: 1286px) {
+  .navbar {
+    padding: 25px 80px 25px 105px;
+  }
 
   .container-1 .framer {
     display: flex;
@@ -206,7 +263,7 @@ span {
     justify-content: center;
     /* justify-content: space-around; */
     /* padding: 0px 60px 0px 60px; */
-    padding: 10px;
+    padding: 120px 15px 30px  15px;
 }
  
     .container-1 .card h2 {
@@ -236,7 +293,7 @@ span {
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
       width: auto;
-      margin-top: 50px;
+      margin-top: 12px;
     }
     
     .card-sub .p2 {
@@ -246,7 +303,7 @@ span {
       font-size: 21px;
       color: white;
       display: flex;
-      line-height: 30px;
+      line-height: 20px;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
@@ -271,24 +328,329 @@ span {
       width: 90%;
       margin-left: 50px;
     }
+
+    
+
+    .footer{
+      background-color:  rgb(11, 13, 34) ;
+      padding: 25px 25px;
+}
+
 }
 
 
 @media only screen and (max-width: 700px) {
+
   body {
    align-items: center;
   }
 
+  
+
   .mobile-container .portfolios .card .img-card img{
-    width: 500px;
-    height: 400px;
+    width: auto;
+    height: auto;
   }
 
   .process-container .process-flow img {
     width: 480px;
     height: 320px;
   }
+  .mobile-container .portfolios .card .img-card img{
+    width: 600px;
+    height: auto;
+  }
 
+
+}
+
+
+@media only screen and (max-width: 666px) {
+ .navbar {
+  padding: 25px 25px 25px 25px;
+}
+
+  .container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Vedio Container Responsive */
+  
+
+  .card-sub h2 {
+    font-size: 32px;
+  }
+  .card-sub h2 span {
+    font-size: 32px;
+  }
+  .card-sub {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+  }
+  
+  .card-sub .p1 {
+    font-size: 22px;
+    margin-top: 55px;
+  }
+  
+  .card-sub .p2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .card-sub .p2 span{
+    font-size: 24px;
+  }
+
+  .container-1 .framer .card .scroll-text{
+    height: 110px;
+  }
+  .container-1 .framer .card .scroll-text p{
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .card .card-btn {
+    margin-top: 20px;
+}
+.card .card-btn button img {
+    width: 220px;
+    height: 63px;
+}
+.card .card-vedio {
+  
+  height: 325px;
+}
+.card .card-vedio video {
+  margin: 0px;
+  border-radius: 35px;
+  padding: 25px;
+  height: 300px;
+  width: 100%;
+}
+
+
+
+
+
+
+  /* Our Investors Responsive */
+
+  .container-2 .scroll-items .persons .card-img img{
+    height: 68px;
+    width: 82px;
+  }
+  .container-2 .scrol-card h2 {
+    font-size: 28px;
+   
+  }
+  
+  .container-2 .scroll-items .persons .card-name {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-2 .scroll-items .persons .card-name p {
+    font-size: 14px;
+    padding: 0px;
+    margin: 0;
+    font-weight: 300;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  
+  .container-2 .scroll-items .persons .card-desig p {
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  
+  .container-2 .scroll-items .persons .card-descrp p {
+    margin: 0px;
+    font-family: "Inter", "Inter Placeholder", sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* Our Partners Responsive */
+
+  .container-2 .scroll-items .images .image a img {
+    border-radius: 20px;
+    background-color: white;
+    height: 85px;
+    width: fit-content;
+  }
+  
+
+
+
+
+  /* mobile-container Response */
+  .mobile-container .portfolios{
+    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #171c48;
+  }
+  .mobile-container .portfolios .card p{
+    font-family: "Inter-SemiBold", "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  .mobile-container .portfolios .card .img-card img{
+  width: 390px;
+  height: fit-content;
+}
+
+
+
+
+
+  /* Our Products Responsive */
+  .our-products-container .main-box .text-box h2{
+    margin: 5px;
+    font-size: 28px;
+    line-height: 40px;  
+  }
+  
+  .our-products-container .main-box .text-box p{
+   
+    font-size: 18px;
+    line-height: 25px;
+    
+  }
+
+
+
+/* Flexibility Response */
+
+.process-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0px;
+}
+
+.process-container .process-flow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+  color: white;
+}
+
+.process-container .process-flow .text-cards .card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 360px;
+  height: 110px;
+  gap: 18px;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.process-container .process-flow .text-cards .card h1 {
+  margin: 0px;
+  font-family: "Inter-SemiBold", "Inter", sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.process-container .process-flow .text-cards .card p {
+  margin: 0px;
+  font-family: "Inter-SemiBold", "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.process-container .process-flow .images .image-card img {
+  width: 300px;
+  height: 240px;
+}
+
+
+
+
+/* Loan Calculator Responsive */
+.interest-container {
+  padding: 20px;
+  margin: 30px;
+}
+.interest-container .interest-text{
+  font-size: 29px;
+  font-weight: 600;
+  padding: 34px 0px 24px;
+}
+
+.interest-container .interest-cards .loan-amount span{
+  width: 150px;
+  font-size: 18px;
+  font-family: "Inter-SemiBold", "Inter", sans-serif;
+  font-weight: 800px;
+  background-color: transparent;
+}
+.interest-container .interest-cards {
+  font-size: 17px;
+}
+
+
+
+.interest-container .interest-cards .monthly-payment .card {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.interest-container .interest-cards .Loan-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interest-container .interest-cards .Loan-image .pie-chart{
+  width: 280px;
+  height: 230px;
+}
+
+
+ /* Our Blog Responsive */
+
+ .blog-container .blog-text h2{
+ 
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.blog-container .blog-cards .sub-card .card {
+ 
+  width: 333px;
+}
+
+.blog-container .blog-cards .sub-card .card img {
+  
+  width: 330px;
+
+}
 
 }
 

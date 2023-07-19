@@ -1,4 +1,7 @@
 import React from 'react'
+import { Link,  } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { About,Blog, Careers, Patner, Contact } from '../pages';
 import logo from '../assets/logo.svg'
 import { googleplay, appstore, Insta, Facebook, Linkedin, Twitter, Youtube } from "../assets/icons";
 
@@ -6,6 +9,8 @@ import { googleplay, appstore, Insta, Facebook, Linkedin, Twitter, Youtube } fro
 
 
 function Footer() {
+
+    const navigate = useNavigate()
 
 
   return (
@@ -58,21 +63,21 @@ function Footer() {
 
                 <div className="footer-cards">
                     <div className="card"><span>Company</span></div><br />
-                    <div className="card"><p>Careers</p></div>
-                    <div className="card"><p>About us</p></div>
-                    <div className="card"><p>Blog</p></div>
-                    <div className="card"><p>Patner with us</p></div>
+                    <div className="card"><a onClick={() => navigate('/Careers')}>Careers</a></div>
+                    <div className="card"><a onClick={() => navigate('/About')}>About us</a></div>
+                    <div className="card"><a onClick={() => navigate('/Blog')}>Blog</a></div>
+                    <div className="card"><a onClick={() => navigate('/Patner')}>Partner with us</a></div>
                 </div>
                 <div className="footer-cards">
                     <div className="card"><span>Resources</span></div><br />
-                    <div className="card"><p>Privacy Policy</p></div>
-                    <div className="card"><p>Terms of Services</p></div>
+                    <div className="card"><a onClick={()=> navigate('/Privacy_Policy')}>Privacy Policy</a></div>
+                    <div className="card"><a onClick={() => navigate('/Terms_Services')}>Terms of Services</a></div>
                    
                 </div>
                 <div className="footer-cards">
                     <div className="card"><span>Help & Support</span></div><br />
-                    <div className="card"><p>FAQs</p></div>
-                    <div className="card"><p>Contact Us</p></div>
+                    <div className="card"><a>FAQs</a></div>
+                    <div className="card"><a onClick={()=> navigate('/Contact')}>Contact Us</a></div>
 
                 </div>
                 <div className="footer-cards">
@@ -88,7 +93,7 @@ function Footer() {
             <hr  />
             <div className="footer-copy">
                 <div className="copy-rights">
-                    <p>©2023 50Fin.All Rights Reserved | <span>Terms and Conditions</span>  | <span>Privacy Policy</span> </p>
+                    <p>©2023 50Fin.All Rights Reserved | <span  onClick={() => navigate('/Terms_Services')}>Terms and Conditions</span>  | <span onClick={() => navigate('/Privacy_Policy')}>Privacy Policy</span> </p>
                 </div>
             </div>
         </div>

@@ -7,6 +7,8 @@
 
   /* contianer-2 css */
   
+
+/* this is  ourPartners css */
   .container-2 {
     padding: 30px 1px;
     width: 100vw;
@@ -30,8 +32,10 @@
   }
   
   .container-2 .scroll-items {
-    /* height: 400px; */
-    width: 100vw;
+  /* background-color: red; */
+  width: auto;
+  display: flex;
+  gap: 2px;
   }
   
   .container-2 .scroll-items .images {
@@ -46,15 +50,17 @@
     overflow: hidden;
     padding: 22px;
     position: relative;
-    width: min-content;
+    width: auto;
     background-color: rgb(11, 13, 34);
     animation: swip var(--speed) linear infinite backwards ;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
   }
+
+
 
   @keyframes swip {
     0% {
-      transform: translate(0);
+      transform: translate(0%);
     }
 
     100% {
@@ -80,10 +86,15 @@
     background-color: white;
     height: 109px;
     width: fit-content;
+    position: relative;
   }
+
+
+  /* this is  ourInvestors css */
   
   .container-2 .scroll-items .persons {
     /* overflow-x: hidden; */
+    position: relative;
     height: auto;
     width: auto;
     background-color: rgb(11, 13, 34);
@@ -92,6 +103,11 @@
     display: flex;
     animation: swips var(--speed) linear infinite backwards ;
   }
+
+
+
+  
+
   @keyframes swips {
     0% {
       transform: translate(0);
@@ -158,4 +174,8 @@
     justify-content: center;
     align-items: center;
   }
+
+
+
+ 
 
