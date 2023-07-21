@@ -127,13 +127,15 @@
       cursor: pointer;
       padding: 0px 0px;
       height: 325px;
-      /* margin-top: 70px; */
+      position: relative;
+      z-index: -1;
       width: auto;
     }
   
   
     .card .card-vedio video {
-      
+      position: relative;
+      z-index: -1;
       border-radius: 35px;
       padding: 25px;
       height: 380px;

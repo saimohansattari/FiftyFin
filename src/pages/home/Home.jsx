@@ -1,5 +1,5 @@
 import React from "react";
-import VedioContainer from "./vediocontainer/VedioContainer";
+import VedioContainer from "./videocontainer/VedioContainer";
 import Ourpartners from "./partners-investers/Ourpartners";
 import Ourinvestors from "./partners-investers/Ourinvestors";
 import MobileBox from "./mobile_container/MobileBox";

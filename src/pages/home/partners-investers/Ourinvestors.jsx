@@ -3,6 +3,7 @@ import { investors } from '../constant'
 
 function Ourinvestors({speed = 12000,}) {
 
+ 
   
 
   return (

@@ -49,7 +49,8 @@
     justify-content: center;
     overflow: hidden;
     padding: 22px;
-    position: relative;
+    position:relative;
+    z-index: -1;
     width: auto;
     background-color: rgb(11, 13, 34);
     animation: swip var(--speed) linear infinite backwards ;
@@ -93,8 +94,9 @@
   /* this is  ourInvestors css */
   
   .container-2 .scroll-items .persons {
-    /* overflow-x: hidden; */
-    position: relative;
+    overflow: hidden;
+    position:relative;
+    z-index: -1;
     height: auto;
     width: auto;
     background-color: rgb(11, 13, 34);
@@ -106,16 +108,20 @@
 
 
 
+
+
+
   
 
   @keyframes swips {
     0% {
-      transform: translate(0);
+      transform: translate(-100%);
     }
 
     100% {
       transform: translate(100%);
     }
+  
   }
   
   .container-2 .scroll-items .persons a {

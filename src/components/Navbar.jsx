@@ -61,6 +61,7 @@ function Navbar() {
         </div>
 
           <div>
+            {/* <label id='icon' onClick={menu}> <FontAwesomeIcon icon={className === 'responsive' ? faTimes : faBars} /> </label> */}
             <label id='icon' onClick={menu}> <FontAwesomeIcon icon={faBars} /> </label>
 
           </div>
