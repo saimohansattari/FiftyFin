@@ -116,17 +116,20 @@ span {
     
     color:aqua;
   }
+  .navbar.responsive {
+    padding: 24px;
+  }
   .navbar.responsive .list{
     position: fixed;
     align-items: self-start;
   }
   .navbar.responsive .list .nav-buttons {
-    height: 60vh;
-    width:80vw;
+    height: 50vh;
+    width:95vw;
     position: fixed;
     margin-top: 25px;
     margin-left: 0;
-    padding: 25px;
+    padding: 0px;
     background-color: rgb(11, 13, 34);
     display: block;
     display: flex;
@@ -137,12 +140,13 @@ span {
   }
   .navbar.responsive .list .nav-buttons  #a{
     margin: 0;
-    font-weight: 600;
-    font: 15px;
+    font-weight: 400;
+    font-size: 14px;
    
   }
   .navbar .nav-buttons .get-loan {
     margin: 0;
+    width: 309px;
   }
 
  
